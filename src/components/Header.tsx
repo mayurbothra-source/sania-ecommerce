@@ -3,8 +3,9 @@ import Link from 'next/link';
 import { useState } from 'react';
 import Logo from './Logo';
 import { useCart } from '@/lib/cart';
+import { hasDb } from '@/lib/utils';
 
-const nav = [['/shop', 'Shop'], ['/#about', 'About'], ['/track', 'Track order']];
+const nav = [['/shop', 'Shop'], ['/#about', 'About'], ...(hasDb ? [['/track', 'Track order']] : [])];
 export default function Header() {
   const { count } = useCart();
   const [open, setOpen] = useState(false);
@@ -16,9 +17,9 @@ export default function Header() {
           {nav.map(([h, l]) => <Link key={h} href={h} className="text-burgundy hover:text-mustard">{l}</Link>)}
         </nav>
         <div className="flex items-center gap-3">
-          <Link href="/cart" className="relative rounded border border-burgundy px-3 py-1.5 text-sm text-burgundy" aria-label="Cart">
+          {hasDb && <Link href="/cart" className="relative rounded border border-burgundy px-3 py-1.5 text-sm text-burgundy" aria-label="Cart">
             Cart{count > 0 && <span className="ml-2 rounded-full bg-burgundy px-1.5 py-0.5 text-xs text-ivory">{count}</span>}
-          </Link>
+          </Link>}
           <button className="md:hidden text-burgundy" onClick={() => setOpen(!open)} aria-label="Menu">☰</button>
         </div>
       </div>

@@ -1,5 +1,7 @@
 import type { Img, Product } from './types';
 export const inr = (n: number | null | undefined) => (n == null ? '' : '₹' + Number(n).toLocaleString('en-IN', { maximumFractionDigits: 2 }));
+/** Orders, stock and admin need Supabase. Without it the site runs as a catalogue (products from data/products.json, orders via WhatsApp). */
+export const hasDb = !!process.env.NEXT_PUBLIC_SUPABASE_URL;
 export const WHATSAPP = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '';
 export const INSTAGRAM = process.env.NEXT_PUBLIC_INSTAGRAM_HANDLE || '';
 export const waLink = (text = 'Hi SANIA!') => WHATSAPP ? `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(text)}` : '#';

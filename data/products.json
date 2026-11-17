@@ -1,0 +1,331 @@
+[
+ {
+  "id": "SAN-01",
+  "code": "SAN-01",
+  "slug": "san-01",
+  "name": "Dusty Rose",
+  "collection": "Long Cotton Kurtis",
+  "tagline": "Soft, pretty & so easy.",
+  "description": "Dusty-rose cotton with a tonal paisley print, a pretty button placket and printed ¾ cuffs.",
+  "fabric": "Soft cotton",
+  "fit": "Straight",
+  "sleeve": "3/4 sleeve",
+  "length": "Long kurti, side slits",
+  "colour": "Dusty rose",
+  "colour_hex": null,
+  "perfect_for": [
+   "College",
+   "Brunch",
+   "Market runs"
+  ],
+  "mrp": null,
+  "price": null,
+  "is_active": true,
+  "is_featured": true,
+  "is_new": false,
+  "out_of_stock": false,
+  "sort_order": 1,
+  "created_at": "2026-11-01T00:00:00Z",
+  "product_sizes": [],
+  "product_images": [
+   {
+    "id": "SAN-01-front",
+    "product_id": "SAN-01",
+    "url": "/products/san-01-front.webp",
+    "kind": "front",
+    "is_main": true,
+    "sort_order": 0
+   },
+   {
+    "id": "SAN-01-back",
+    "product_id": "SAN-01",
+    "url": "/products/san-01-back.webp",
+    "kind": "back",
+    "is_main": false,
+    "sort_order": 1
+   }
+  ]
+ },
+ {
+  "id": "SAN-02",
+  "code": "SAN-02",
+  "slug": "san-02",
+  "name": "Mustard",
+  "collection": "Long Cotton Kurtis",
+  "tagline": "A little sunshine, stitched.",
+  "description": "Warm mustard cotton scattered with pink block-print blooms, an embroidered placket and printed cuffs.",
+  "fabric": "Soft cotton",
+  "fit": "Straight",
+  "sleeve": "3/4 sleeve",
+  "length": "Long kurti, side slits",
+  "colour": "Mustard",
+  "colour_hex": null,
+  "perfect_for": [
+   "Puja",
+   "Brunch",
+   "Family time"
+  ],
+  "mrp": null,
+  "price": null,
+  "is_active": true,
+  "is_featured": true,
+  "is_new": false,
+  "out_of_stock": false,
+  "sort_order": 2,
+  "created_at": "2026-11-02T00:00:00Z",
+  "product_sizes": [],
+  "product_images": [
+   {
+    "id": "SAN-02-front",
+    "product_id": "SAN-02",
+    "url": "/products/san-02-front.webp",
+    "kind": "front",
+    "is_main": true,
+    "sort_order": 0
+   },
+   {
+    "id": "SAN-02-back",
+    "product_id": "SAN-02",
+    "url": "/products/san-02-back.webp",
+    "kind": "back",
+    "is_main": false,
+    "sort_order": 1
+   }
+  ]
+ },
+ {
+  "id": "SAN-03",
+  "code": "SAN-03",
+  "slug": "san-03",
+  "name": "Black & Ivory",
+  "collection": "Long Cotton Kurtis",
+  "tagline": "Your forever favourite.",
+  "description": "Classic black-and-ivory paisley with a geometric yoke, chevron trim and pops of pink buttons.",
+  "fabric": "Soft cotton",
+  "fit": "Straight",
+  "sleeve": "3/4 sleeve",
+  "length": "Long kurti, side slits",
+  "colour": "Black & ivory",
+  "colour_hex": null,
+  "perfect_for": [
+   "Office",
+   "College",
+   "Travel"
+  ],
+  "mrp": null,
+  "price": null,
+  "is_active": true,
+  "is_featured": true,
+  "is_new": false,
+  "out_of_stock": false,
+  "sort_order": 3,
+  "created_at": "2026-11-03T00:00:00Z",
+  "product_sizes": [],
+  "product_images": [
+   {
+    "id": "SAN-03-front",
+    "product_id": "SAN-03",
+    "url": "/products/san-03-front.webp",
+    "kind": "front",
+    "is_main": true,
+    "sort_order": 0
+   },
+   {
+    "id": "SAN-03-back",
+    "product_id": "SAN-03",
+    "url": "/products/san-03-back.webp",
+    "kind": "back",
+    "is_main": false,
+    "sort_order": 1
+   }
+  ]
+ },
+ {
+  "id": "SAN-04",
+  "code": "SAN-04",
+  "slug": "san-04",
+  "name": "Plum Stripe",
+  "collection": "Long Cotton Kurtis",
+  "tagline": "Neat, sharp & super comfy.",
+  "description": "Fine plum and charcoal stripes, a notch neck with golden trim and a printed black back yoke.",
+  "fabric": "Soft cotton",
+  "fit": "Straight",
+  "sleeve": "3/4 sleeve",
+  "length": "Long kurti, side slits",
+  "colour": "Plum stripe",
+  "colour_hex": null,
+  "perfect_for": [
+   "Office",
+   "Meetings",
+   "Coffee dates"
+  ],
+  "mrp": null,
+  "price": null,
+  "is_active": true,
+  "is_featured": true,
+  "is_new": false,
+  "out_of_stock": false,
+  "sort_order": 4,
+  "created_at": "2026-11-04T00:00:00Z",
+  "product_sizes": [],
+  "product_images": [
+   {
+    "id": "SAN-04-front",
+    "product_id": "SAN-04",
+    "url": "/products/san-04-front.webp",
+    "kind": "front",
+    "is_main": true,
+    "sort_order": 0
+   },
+   {
+    "id": "SAN-04-back",
+    "product_id": "SAN-04",
+    "url": "/products/san-04-back.webp",
+    "kind": "back",
+    "is_main": false,
+    "sort_order": 1
+   }
+  ]
+ },
+ {
+  "id": "SAN-05",
+  "code": "SAN-05",
+  "slug": "san-05",
+  "name": "Midnight Floral",
+  "collection": "Long Cotton Kurtis",
+  "tagline": "Pretty after dark, too.",
+  "description": "A midnight base with wine, olive and indigo florals, a V-neck yoke and pearly white buttons.",
+  "fabric": "Soft cotton",
+  "fit": "Straight",
+  "sleeve": "3/4 sleeve",
+  "length": "Long kurti, side slits",
+  "colour": "Midnight floral",
+  "colour_hex": null,
+  "perfect_for": [
+   "Dinners",
+   "Gatherings",
+   "Evenings out"
+  ],
+  "mrp": null,
+  "price": null,
+  "is_active": true,
+  "is_featured": false,
+  "is_new": true,
+  "out_of_stock": false,
+  "sort_order": 5,
+  "created_at": "2026-11-05T00:00:00Z",
+  "product_sizes": [],
+  "product_images": [
+   {
+    "id": "SAN-05-front",
+    "product_id": "SAN-05",
+    "url": "/products/san-05-front.webp",
+    "kind": "front",
+    "is_main": true,
+    "sort_order": 0
+   },
+   {
+    "id": "SAN-05-back",
+    "product_id": "SAN-05",
+    "url": "/products/san-05-back.webp",
+    "kind": "back",
+    "is_main": false,
+    "sort_order": 1
+   }
+  ]
+ },
+ {
+  "id": "SAN-06",
+  "code": "SAN-06",
+  "slug": "san-06",
+  "name": "Soft Cream",
+  "collection": "Long Cotton Kurtis",
+  "tagline": "Light as a summer morning.",
+  "description": "Soft cream with tiny grey-blue bootis, a button placket and printed borders on neck, cuffs and hem.",
+  "fabric": "Soft cotton",
+  "fit": "Straight",
+  "sleeve": "3/4 sleeve",
+  "length": "Long kurti, side slits",
+  "colour": "Soft cream",
+  "colour_hex": null,
+  "perfect_for": [
+   "Everyday",
+   "Summer",
+   "Market runs"
+  ],
+  "mrp": null,
+  "price": null,
+  "is_active": true,
+  "is_featured": false,
+  "is_new": true,
+  "out_of_stock": false,
+  "sort_order": 6,
+  "created_at": "2026-11-06T00:00:00Z",
+  "product_sizes": [],
+  "product_images": [
+   {
+    "id": "SAN-06-front",
+    "product_id": "SAN-06",
+    "url": "/products/san-06-front.webp",
+    "kind": "front",
+    "is_main": true,
+    "sort_order": 0
+   },
+   {
+    "id": "SAN-06-back",
+    "product_id": "SAN-06",
+    "url": "/products/san-06-back.webp",
+    "kind": "back",
+    "is_main": false,
+    "sort_order": 1
+   }
+  ]
+ },
+ {
+  "id": "SAN-07",
+  "code": "SAN-07",
+  "slug": "san-07",
+  "name": "Terracotta",
+  "collection": "Long Cotton Kurtis",
+  "tagline": "Earthy, warm & so you.",
+  "description": "Terracotta red with leafy green vines, an embroidered notch neck and a printed motif yoke at the back.",
+  "fabric": "Soft cotton",
+  "fit": "Straight",
+  "sleeve": "3/4 sleeve",
+  "length": "Long kurti, side slits",
+  "colour": "Terracotta",
+  "colour_hex": null,
+  "perfect_for": [
+   "Festive",
+   "Weekends",
+   "Casual"
+  ],
+  "mrp": null,
+  "price": null,
+  "is_active": true,
+  "is_featured": false,
+  "is_new": true,
+  "out_of_stock": false,
+  "sort_order": 7,
+  "created_at": "2026-11-07T00:00:00Z",
+  "product_sizes": [],
+  "product_images": [
+   {
+    "id": "SAN-07-front",
+    "product_id": "SAN-07",
+    "url": "/products/san-07-front.webp",
+    "kind": "front",
+    "is_main": true,
+    "sort_order": 0
+   },
+   {
+    "id": "SAN-07-back",
+    "product_id": "SAN-07",
+    "url": "/products/san-07-back.webp",
+    "kind": "back",
+    "is_main": false,
+    "sort_order": 1
+   }
+  ]
+ }
+]

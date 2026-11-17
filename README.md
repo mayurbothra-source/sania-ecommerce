@@ -7,6 +7,8 @@ Next.js 16 (App Router, TypeScript) · Tailwind CSS 3 · Supabase (Postgres + Au
 ## What's included
 Storefront (home, shop with filters/sort, product pages, cart, checkout, confirmation, order tracking) and a password-protected admin (products, sizes & stock, images, orders, CSV export, testimonials, shipping charges, dashboard). The seven catalogue products SAN-01…SAN-07 are seeded with their descriptions, specs and front/back photos. **Prices, sizes and stock are not seeded** – set them in Admin.
 
+> **Catalogue mode:** with no Supabase variables set, the site runs from `data/products.json` and `public/products/` (stored in this repo) and orders go via WhatsApp. Cart, checkout, tracking and admin switch on automatically once the Supabase variables are set. To set prices before the database exists, edit `price`, `mrp` and `product_sizes` in `data/products.json` and push.
+
 ## Setup (≈20 minutes)
 
 ### 1. Supabase

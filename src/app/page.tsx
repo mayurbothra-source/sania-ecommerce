@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { getProducts } from '@/lib/data';
 import { supabasePublic } from '@/lib/supabase';
 import ProductCard from '@/components/ProductCard';
-import { mainImage, img } from '@/lib/utils';
+import { mainImage, img, hasDb } from '@/lib/utils';
 
 export const dynamic = 'force-dynamic';
 
@@ -11,7 +11,7 @@ const why = [['Budget-friendly fashion', 'Attractive kurtis that give you real v
 
 export default async function Home() {
   const products = await getProducts();
-  const { data: reviews } = await supabasePublic().from('testimonials').select('*').eq('is_active', true).order('sort_order');
+  const { data: reviews } = hasDb ? await supabasePublic().from('testimonials').select('*').eq('is_active', true).order('sort_order') : { data: [] };
   const featured = products.filter((p) => p.is_featured).slice(0, 4);
   const fresh = products.filter((p) => p.is_new).slice(0, 4);
   const hero = products.slice(0, 3);

@@ -10,7 +10,7 @@ export default function Footer() {
         <div><Logo light /><p className="mt-3 font-script text-xl text-mustard">Pretty, comfy &amp; easy on the pocket.</p></div>
         <div className="space-y-2 text-sm">
           <p className="eyebrow">Explore</p>
-          <Link className="block" href="/shop">Shop all kurtis</Link><Link className="block" href="/track">Track your order</Link>
+          <Link className="block" href="/shop">Shop all kurtis</Link>{process.env.NEXT_PUBLIC_SUPABASE_URL && <Link className="block" href="/track">Track your order</Link>}
         </div>
         <div className="space-y-2 text-sm">
           <p className="eyebrow">Contact</p>

@@ -8,8 +8,8 @@ export default function ProductCard({ p }: { p: Product }) {
   const out = !sellable(p) && p.price != null;
   return (
     <Link href={`/product/${p.slug}`} className="group block">
-      <div className="relative aspect-[3/4] overflow-hidden rounded bg-rose/30">
-        {main && <img src={img(main, 600)} alt={`${p.name} kurti ${p.code}`} loading="lazy" className="h-full w-full object-cover" />}
+      <div className="relative aspect-[2/5] overflow-hidden rounded bg-rose/30">
+        {main && <img src={img(main, 600)} alt={`${p.name} kurti ${p.code}`} loading="lazy" className="h-full w-full object-cover object-top" />}
         {back && <img src={img(back, 600)} alt="" loading="lazy" className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100" />}
         {out && <span className="absolute left-2 top-2 rounded bg-burgundy px-2 py-1 text-xs text-ivory">Out of stock</span>}
         {!out && p.is_new && <span className="absolute left-2 top-2 rounded bg-mustard px-2 py-1 text-xs text-white">New</span>}

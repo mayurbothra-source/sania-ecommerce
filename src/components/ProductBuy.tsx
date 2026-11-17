@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useCart } from '@/lib/cart';
 import type { Size } from '@/lib/types';
-import { waLink } from '@/lib/utils';
+import { hasDb, waLink } from '@/lib/utils';
 
 export default function ProductBuy({ productId, code, sizes, canBuy, priceSet }: { productId: string; code: string; sizes: Size[]; canBuy: boolean; priceSet: boolean }) {
   const { add } = useCart();
@@ -14,6 +14,12 @@ export default function ProductBuy({ productId, code, sizes, canBuy, priceSet }:
   const cur = sizes.find((s) => s.size === size);
   const max = Math.min(10, cur?.stock || 1);
 
+  if (!hasDb) return (
+    <div className="mt-6">
+      <a href={waLink(`Hi SANIA, I'd like to order ${code}`)} target="_blank" rel="noreferrer" className="btn-primary w-full">Order on WhatsApp</a>
+      <p className="mt-2 text-xs text-[#2b2024]/60">Message us the product code {code} and we’ll confirm size, price and delivery.</p>
+    </div>
+  );
   if (!canBuy) return (
     <div className="mt-6">
       <p className="rounded bg-rose/40 p-3 text-sm">{priceSet ? 'Currently out of stock.' : 'Pricing coming soon.'} Message us and we’ll let you know.</p>

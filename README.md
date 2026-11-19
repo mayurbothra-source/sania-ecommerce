@@ -12,7 +12,7 @@ Storefront (home, shop with filters/sort, product pages, cart, checkout, confirm
 ## Google Sheet backend (products, prices, stock)
 Set `SHEET_URL` (and `SHEET_SECRET`) and the site reads every product from your Google Sheet on **every page load** (no caching) and each order reduces that size's quantity by 1. Script: `apps-script/Code.gs`.
 - Blank size cell = size not sold · `0` = shown as "Out of Stock" · `Active = No` hides the product.
-- Descriptions/specs come from `data/products.json` when the SKU matches; name, price, image, sizes and Active come from the sheet. Image URL may be a Google Drive share link; leave it blank to use the bundled photo.
+- Descriptions/specs come from `data/products.json` when the SKU matches; name, price, image, sizes and Active come from the sheet. Photos come from the bundled files in `public/products/` via the SKU map in `src/lib/productImages.ts` (the sheet's Image URL column is ignored for now). To add a new SKU's photos, put the files in `public/products/` and add a line to that map.
 
 ## Setup (≈20 minutes)
 

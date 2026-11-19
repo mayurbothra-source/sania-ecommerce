@@ -4,7 +4,7 @@ import { backImage, discountPct, img, inr, mainImage, sellable, sizesOf } from '
 
 export default function ProductCard({ p }: { p: Product }) {
   const back = backImage(p), main = mainImage(p), off = discountPct(p);
-  const sizes = sizesOf(p).filter((s) => s.enabled);
+  const sizes = sizesOf(p).filter((s) => s.enabled && s.stock > 0);
   const out = !sellable(p) && p.price != null;
   return (
     <Link href={`/product/${p.slug}`} className="group block">

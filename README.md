@@ -9,6 +9,11 @@ Storefront (home, shop with filters/sort, product pages, cart, checkout, confirm
 
 > **Catalogue mode:** with no Supabase variables set, the site runs from `data/products.json` and `public/products/` (stored in this repo) and orders go via WhatsApp. Cart, checkout, tracking and admin switch on automatically once the Supabase variables are set. To set prices before the database exists, edit `price`, `mrp` and `product_sizes` in `data/products.json` and push.
 
+## Google Sheet backend (products, prices, stock)
+Set `SHEET_URL` (and `SHEET_SECRET`) and the site reads every product from your Google Sheet on **every page load** (no caching) and each order reduces that size's quantity by 1. Script: `apps-script/Code.gs`.
+- Blank size cell = size not sold · `0` = shown as "Out of Stock" · `Active = No` hides the product.
+- Descriptions/specs come from `data/products.json` when the SKU matches; name, price, image, sizes and Active come from the sheet. Image URL may be a Google Drive share link; leave it blank to use the bundled photo.
+
 ## Setup (≈20 minutes)
 
 ### 1. Supabase

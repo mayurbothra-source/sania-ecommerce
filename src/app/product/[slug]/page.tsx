@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getProduct } from '@/lib/data';
+import { sheetMode } from '@/lib/sheet';
 import Gallery from '@/components/Gallery';
 import ProductBuy from '@/components/ProductBuy';
 import { discountPct, img, inr, mainImage, sellable, sizesOf, sortedImages } from '@/lib/utils';
@@ -33,7 +34,7 @@ export default async function ProductPage(props: { params: Promise<{ slug: strin
           {p.price != null ? <><span className="font-medium text-burgundy">{inr(p.price)}</span>{p.mrp && p.mrp > p.price && <><span className="ml-3 text-base text-[#2b2024]/50 line-through">{inr(p.mrp)}</span><span className="ml-2 text-sm text-rosedeep">{off}% off</span></>}</> : <span className="text-base text-[#2b2024]/60">Price coming soon</span>}
         </p>
         {p.description && <p className="mt-4 leading-relaxed">{p.description}</p>}
-        <ProductBuy productId={p.id} code={p.code} sizes={sizesOf(p)} canBuy={sellable(p)} priceSet={p.price != null} />
+        <ProductBuy sheet={sheetMode()} name={p.name} productId={p.id} code={p.code} sizes={sizesOf(p)} canBuy={sellable(p)} priceSet={p.price != null} />
         <dl className="mt-8 divide-y divide-rose/60 border-y border-rose/60">
           {specs.map(([k, v]) => <div key={k} className="flex justify-between py-2 text-sm"><dt className="uppercase tracking-wider text-burgundy/80">{k}</dt><dd>{v}</dd></div>)}
         </dl>
